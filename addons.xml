@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd"
+[<!ENTITY mdash      "&#x2014;">]
+  >
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xml:lang="pl">
+<bookinfo>
+<title>Programy Użytkowe. Materiały uzupełniające</title>
+<author>
+<firstname>Aleksander</firstname>
+<surname>Denisiuk</surname>
+</author>
+<copyright>
+<year>2017</year>
+<holder>A. Denisiuk</holder>
+</copyright>
+</bookinfo>
+
+<abstract>
+	<para>
+            W tym miejscu zebrane są materiały, uzupełniające <ulink url="../">ćwiczenia</ulink>
+	</para>
+	<para>Najnowsza wersja tego dokumentu dostępna jest pod adresem <ulink url="http://wmii.uwm.edu.pl/~denisjuk/uwm/"><code>http://wmii.uwm.edu.pl/~denisjuk/uwm/</code></ulink></para>
+</abstract>
+
+<xi:include  xmlns:xi="http://www.w3.org/2001/XInclude"  href="TeXMaker.xml" />
+<xi:include  xmlns:xi="http://www.w3.org/2001/XInclude"  href="Gitigrone.xml" />
+
+</book>
+

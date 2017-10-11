@@ -1,0 +1,7 @@
+*~
+*.backup
+*.html
+tmp/*.xml
+*.P
+css/*.css
+addons/*.css

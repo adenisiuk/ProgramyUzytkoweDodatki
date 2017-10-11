@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd"
+[
+  <!ENTITY mdash      "&#x2014;">
+  <!ENTITY dots      ". . . . . . . . . .">
+  <!ENTITY nbsp      "&#160;">
+  <!ENTITY minus      "&#8722;">
+  <!ENTITY hellip      "&#8230;">
+  <!ENTITY bdquo      "&#8222;">
+  <!ENTITY copyright      "&#x00A9;">
+  <!ENTITY ldquo      "&#8220;">
+  <!ENTITY laquo      "&#171;">
+  <!ENTITY raquo      "&#187;">
+  <!ENTITY rdquo      "&#8221;">
+  <!ENTITY ndash      "&#x2013;">
+  ]>
+<chapter id="texmaker">
+    <title>Konfiguracja <application>TeXMaker</application> i&nbsp;<application>Yap</application></title>
+
+<section><title>Dodanie szablonu do <application>TeXMaker</application></title>
+
+<simpara>
+Szablon dla nowego dokumentu LaTeX w&nbsp;języku polskim może byc nastepujący:
+</simpara>
+<programlisting language='latex'>
+\documentclass[a4paper,12pt]{article}
+\usepackage[MeX]{polski}
+\usepackage[utf8]{inputenc}
+
+%opening
+\title{}
+\author{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+\end{abstract}
+
+\section{}
+
+\end{document}
+</programlisting>
+<orderedlist>
+<listitem>
+    <simpara>
+        Utwórz plik z&nbsp;szablonem.
+    </simpara>
+</listitem>
+<listitem>
+    <simpara>
+        Umieść jego w&nbsp;odpowiednim katalogu. Przykładowo w&nbsp;<filename>C:\Users\local\Documents\TeXnic Center Templates</filename>
+    </simpara>
+    <simpara>
+        Uzupełnij konfigurację <application>TeXnicCenter</application>, wybierając w&nbsp;menu kolejno <option>Tools</option>, <option>Options</option>, <option>Directories</option>, jak na <xref linkend="tc_config"/>.</simpara>
+	     <figure id="tc_config">
+                 <title>Opcja <option>Directiories</option> w&nbsp;programie<application>TeXnicCenter</application></title>
+	       <mediaobject>
+		 <imageobject>
+		   <imagedata fileref="../pics/TC.png"/>
+		 </imageobject>
+		 <textobject>
+                     <phrase>Opcja <option>Directiories</option> w&nbsp;programie<application>TeXnicCenter</application></phrase>
+		 </textobject>
+	       </mediaobject>
+	     </figure>
+</listitem>
+</orderedlist>
+
+</section>
+
+    
+<section><title>Zamiana trybu kompilacji na <option>TeX=>DVI</option></title>
+<example>
+        <simpara>
+            Zamień tryb kompilacji na <option>TeX=>DVI</option>
+        </simpara>
+</example>
+</section>
+
+<section><title>Konfiguracja <option>Inverse DVI Search</option> w&nbsp;<application>Yap</application></title>
+
+    <simpara>Podwójne kliknięcie na takście w&nbsp;dokumencie DVI, otawrtym w&nbsp;programie <application>Yap</application> przenosi do odpowiedniego miejsca w&nbsp;dokumencie TeX, otwartym w&nbsp;<application>TeXMaker</application>.</simpara>
+    
+    <simpara>Jeżeli to nie działa, można poprawić konfigurację <application>Yap</application>, wybierając w&nbsp;menu kolejno <option>View</option>, <option>Options</option>, <option>Inverse DVI search</option>. W&nbsp;oknie dialogowym dodaj nową opcję, jak na <xref linkend="yap_config"/>.</simpara>
+	     <figure id="yap_config">
+                 <title>Opcja <option>Inverse DVI search</option> w&nbsp;programie<application>Yap</application></title>
+	       <mediaobject>
+		 <imageobject>
+		   <imagedata fileref="../pics/Yap.png"/>
+		 </imageobject>
+		 <textobject>
+                     <phrase>Opcja <option>Inverse DVI search</option> w&nbsp;programie<application>Yap</application></phrase>
+		 </textobject>
+	       </mediaobject>
+	     </figure>
+    
+</section>
+
+
+
+</chapter>

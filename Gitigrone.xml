@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd"
+[
+  <!ENTITY mdash      "&#x2014;">
+  <!ENTITY dots      ". . . . . . . . . .">
+  <!ENTITY nbsp      "&#160;">
+  <!ENTITY minus      "&#8722;">
+  <!ENTITY hellip      "&#8230;">
+  <!ENTITY bdquo      "&#8222;">
+  <!ENTITY copyright      "&#x00A9;">
+  <!ENTITY ldquo      "&#8220;">
+  <!ENTITY laquo      "&#171;">
+  <!ENTITY raquo      "&#187;">
+  <!ENTITY rdquo      "&#8221;">
+  <!ENTITY ndash      "&#x2013;">
+  ]>
+<chapter id="gitignore">
+<title>Gitignore</title>
+
+<section><title>Zadanie</title>
+<simpara>Do projektu dodaje się tylko pliki źródłowe. Nie dodaje się natomiast plików pochodnych. W&nbsp;szczególności, jeżeli projektem jet tekst w&nbsp;LaTeXu, powinien on składać się z&nbsp;plików <filename>*.tex</filename>, ewentualnie <filename>*.bib</filename>, obrazków, etc. Na pewno nie powinno tam być plików <filename>*.dvi</filename>, <filename>*.aux</filename> <filename>*.pdf</filename> (o&nbsp;ile to nie są źródłowe obrazki) i&nbsp;podobnych.</simpara>
+
+<simpara>
+    Można dać <application>git</application>owi do zrozumienia, które nie dodane do projektu pliki należy ignorować. Wystarczy w&nbsp;katalogu z&nbsp;projektem utworzyć plik <filename>.gitingore</filename>, w&nbsp;którym wpisać wszystkie ignorowane pliki.
+</simpara>
+
+<simpara>
+    W&nbsp;przypadku projektu LaTeX plik <filename>.gitingore</filename> może być następujący:
+</simpara>
+<programlisting language='shell'>
+*.aux
+*.dvi
+*.pdf
+*.ps
+*.log
+*.out
+*.toc
+*.backup
+</programlisting>
+
+<example>
+    <orderedlist>
+    <listitem>
+        <simpara>
+            Utwórz w&nbsp;swoim projekcie LaTeX plik <filename>.gitignore</filename>, aby <application>git</application> ignorował wszystkie pliki pośrednie.
+        </simpara>
+            <itemizedlist>
+            <listitem>
+                <simpara>
+                    Utwórz plik <filename>.gitignore</filename>
+                </simpara>
+            </listitem>
+            <listitem>
+                <simpara>
+                Dodawaj do niego odpowiednie wpisy, aż polecenie 
+<programlisting language='shell'>
+    git status
+</programlisting>
+przestanie pokazywać pośrednie pliki, nie należące do projektu.
+                </simpara>
+            </listitem>
+            </itemizedlist>
+    </listitem>
+    <listitem>
+        <simpara>
+        Czy warto dodać ten plik do projektu?
+        </simpara>
+    </listitem>
+    </orderedlist>
+</example>
+</section>
+
+
+<section><title>Więcej na temat</title>
+<orderedlist>
+<listitem>
+    <simpara>
+     <ulink url='https://git-scm.com/docs/gitignore'>Dokumentacja</ulink>
+    </simpara>
+</listitem>
+<listitem>
+    <simpara>
+        <ulink url='https://github.com/github/gitignore'>Projekt</ulink>, zawierający pliki <filename>.gitignore</filename> dla różnego rodzaju projektów
+    </simpara>
+</listitem>
+</orderedlist>
+</section>
+
+</chapter>
