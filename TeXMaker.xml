@@ -15,9 +15,9 @@
   <!ENTITY ndash      "&#x2013;">
   ]>
 <chapter id="texmaker">
-    <title>Konfiguracja <application>TeXMaker</application> i&nbsp;<application>Yap</application></title>
+    <title>Konfiguracja <application>TeXnicCenter</application> i&nbsp;<application>Yap</application></title>
 
-<section><title>Dodanie szablonu do <application>TeXMaker</application></title>
+<section><title>Dodanie szablonu do <application>TeXnicCenter</application></title>
 
 <simpara>
 Szablon dla nowego dokumentu LaTeX w&nbsp;języku polskim może byc nastepujący:
@@ -82,7 +82,7 @@ Szablon dla nowego dokumentu LaTeX w&nbsp;języku polskim może byc nastepujący
 
 <section><title>Konfiguracja <option>Inverse DVI Search</option> w&nbsp;<application>Yap</application></title>
 
-    <simpara>Podwójne kliknięcie na takście w&nbsp;dokumencie DVI, otawrtym w&nbsp;programie <application>Yap</application> przenosi do odpowiedniego miejsca w&nbsp;dokumencie TeX, otwartym w&nbsp;<application>TeXMaker</application>.</simpara>
+    <simpara>Podwójne kliknięcie na takście w&nbsp;dokumencie DVI, otawrtym w&nbsp;programie <application>Yap</application> przenosi do odpowiedniego miejsca w&nbsp;dokumencie TeX, otwartym w&nbsp;<application>TeXnicCenter</application>.</simpara>
     
     <simpara>Jeżeli to nie działa, można poprawić konfigurację <application>Yap</application>, wybierając w&nbsp;menu kolejno <option>View</option>, <option>Options</option>, <option>Inverse DVI search</option>. W&nbsp;oknie dialogowym dodaj nową opcję, jak na <xref linkend="yap_config"/>.</simpara>
 	     <figure id="yap_config">
