@@ -96,6 +96,13 @@ Szablon dla nowego dokumentu LaTeX w&nbsp;języku polskim może byc nastepujący
 		 </textobject>
 	       </mediaobject>
 	     </figure>
+         
+         <simpara>
+             Zalecane argumenty dla <application>TeXnicCenter</application>
+         </simpara>
+<programlisting language='ini'>
+/ddecmd "[goto('%f', '%l')]"
+</programlisting>
     
 </section>
 
